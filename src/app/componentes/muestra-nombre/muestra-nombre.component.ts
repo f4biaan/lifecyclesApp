@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-muestra-nombre',
@@ -6,6 +6,14 @@ import { Component } from '@angular/core';
   styles: [
   ]
 })
-export class MuestraNombreComponent {
+export class MuestraNombreComponent implements OnChanges {
+
+  @Input() nombre!: string;
+
+  constructor() { }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(changes);
+  }
 
 }
