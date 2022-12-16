@@ -28,6 +28,9 @@ export class Pagina1Component
     AfterViewChecked,
     OnDestroy
 {
+
+  // https://angular.io/guide/lifecycle-hooks
+
   nombre: string = 'f4biaan';
   segundos: number= 0;
   timerSubscription!: Subscription;
