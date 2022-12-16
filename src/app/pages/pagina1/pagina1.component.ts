@@ -27,9 +27,12 @@ export class Pagina1Component
     AfterViewChecked,
     OnDestroy
 {
+  nombre: string = 'f4biaan';
+
   // hook de ciclo de vida de Angular cuando sucede algo en el componente durante el ciclo de vida de un componente
   // se ejecuta cuando el componente se crea o se carga/construye el componente
 
+  // ver en consola cuando se ejecuta cada uno de los hooks
   constructor() {
     console.log('Constructor');
   }
@@ -57,4 +60,7 @@ export class Pagina1Component
   ngOnDestroy(): void {
     console.log('ngOnDestroy');
   }
+
+  //
+  guardar(){}
 }

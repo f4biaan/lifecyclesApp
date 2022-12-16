@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Pagina1Component } from './pages/pagina1/pagina1.component';
 import { MuestraNombreComponent } from './componentes/muestra-nombre/muestra-nombre.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MuestraNombreComponent } from './componentes/muestra-nombre/muestra-nom
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
